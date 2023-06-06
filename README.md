@@ -35,7 +35,38 @@ Q3.2
 
 To import and use a 3D model created in Blender within a Three.js application, the following steps can be followed:
 
-    Export the model from Blender in .glTF or .glb format.
-    Use the GLTFLoader in Three.js to import the model.
-    Add the loaded model to the scene using scene.add().
-    Set up lighting, materials, position, and rotation as required.
+    1. Export the model from Blender in .glTF or .glb format.
+    2. Use the GLTFLoader in Three.js to import the model.
+    3. Add the loaded model to the scene using scene.add().
+    4. Set up lighting, materials, position, and rotation as required.
+   
+Q4.1
+
+The file structure:
+
+project/
+├── blender/
+│   ├── models/
+│   │   ├── script.py
+│   └── Dockerfile
+├── flask/
+│   ├── app.py
+│   ├── templates/
+│   │   ├── index.html
+│   ├── static/
+│   │   ├── css/
+│   │   ├── js/
+│   │   └── ...
+│   └── Dockerfile
+└── docker-compose.yml
+
+Project Steps:
+
+    1. Blender Script
+    2. Web Interface
+    3. Integration
+    4. Dockerization
+
+Q4.2
+
+Challenges that may arise when developing and deploying this kind of application include managing dependencies and compatibility between Blender, Flask, and other components. Integrating Blender with Flask requires establishing clear communication and data exchange mechanisms. Organizing and managing the storage of generated 3D models can be complex. Deployment in a Docker environment involves configuring Dockerfiles and container orchestration tools. Addressing these challenges requires expertise, planning, and continuous improvement throughout the development and deployment process.
